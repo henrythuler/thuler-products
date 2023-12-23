@@ -11,12 +11,11 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../assets/styles/style.css">
 
-        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="stylesheet" href="assets/styles/home.css">
 
     </head>
-
 
     <body class="d-flex justify-content-center align-items-center">
 
@@ -24,55 +23,59 @@
 
             <h1 class="fs-1 text-center mb-4">Bem-vindo ao Thuler Products</h1>
 
-            <div class="w-75 d-flex justify-content-center flex-wrap row-gap-4 column-gap-5 cards">
+            <div class="w-75 cards">
 
-                <a href="products" class="px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
+                <div class="justify-content-center row row-cols-3 row-gap-3 column-gap-3">
 
-                    <i class="fa-solid fa-table mb-2 fs-1"></i>
+                    <a href="products" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
-                    <h2>Listar Produtos</h2>
+                        <i class="fa-solid fa-table mb-2 fs-1"></i>
 
-                </a>
+                        <h2>Listar Produtos</h2>
 
-                <a href="#" class="px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
+                    </a>
 
-                    <i class="fa-solid fa-magnifying-glass mb-2 fs-1"></i>
+                    <a href="search-product.jsp" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
-                    <h2>Buscar Produto por Código</h2>
+                        <i class="fa-solid fa-magnifying-glass mb-2 fs-1"></i>
 
-                </a>
+                        <h2>Buscar Produto</h2>
 
-                <a href="#" class="px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
+                    </a>
 
-                    <i class="fa-solid fa-download mb-2 fs-1"></i>
+                    <a href="create-product.jsp" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
-                    <h2>Criar Novo Produto</h2>
+                        <i class="fa-solid fa-download mb-2 fs-1"></i>
 
-                </a>
+                        <h2>Criar Novo Produto</h2>
 
-                <a href="#" class="px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
+                    </a>
 
-                    <i class="fa-solid fa-pen-to-square mb-2 fs-1"></i>
+                    <a href="#" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
-                    <h2>Editar Produto</h2>
+                        <i class="fa-solid fa-pen-to-square mb-2 fs-1"></i>
 
-                </a>
+                        <h2>Editar Produto</h2>
 
-                <a href="#" class="px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
+                    </a>
 
-                    <i class="fa-solid fa-trash mb-2 fs-1"></i>
+                    <a href="delete-product.jsp" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
-                    <h2>Excluir Produto por Código</h2>
+                        <i class="fa-solid fa-trash mb-2 fs-1"></i>
 
-                </a>
+                        <h2>Excluir Produto</h2>
 
-                <a href="#" class="px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
+                    </a>
 
-                    <i class="fa-solid fa-eraser mb-2 fs-1"></i>
+                    <a href="#" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
-                    <h2>Apagar Todos Produtos</h2>
+                        <i class="fa-solid fa-eraser mb-2 fs-1"></i>
 
-                </a>
+                        <h2>Apagar Todos Produtos</h2>
+
+                    </a>
+
+                </div><!--Row-->
 
             </div>
 

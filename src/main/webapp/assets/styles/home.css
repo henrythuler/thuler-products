@@ -1,0 +1,14 @@
+.card{
+    background-color: #3559E0;
+    color: #fff;
+    width: 270px;
+}
+
+.card-transition{
+    transition: 0.5s all ease;
+}
+
+.card-transition:hover{
+    background-color: #fff;
+    color: #000!important;
+}

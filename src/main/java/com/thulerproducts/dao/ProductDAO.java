@@ -198,10 +198,6 @@ public class ProductDAO implements DAO<Product>{
 
             }
 
-        }else{
-
-            throw new RuntimeException("This product does not exist in the DB.");
-
         }
 
         return productUpdated > 0;
@@ -247,10 +243,6 @@ public class ProductDAO implements DAO<Product>{
 
             }
 
-        }else{
-
-            throw new RuntimeException("This product does not exist in the DB.");
-
         }
 
         return productDeleted > 0;
@@ -280,10 +272,6 @@ public class ProductDAO implements DAO<Product>{
                 System.err.println("DB Error: " + e.getMessage());
 
             }
-
-        }else{
-
-            throw new RuntimeException("There's no products in the DB.");
 
         }
 
