@@ -22,7 +22,11 @@ public class ConnectionManager {
         try{
 
             Class.forName("org.postgresql.Driver");
-            String connectionString = "jdbc:postgresql://ep-small-cake-15698116-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?user=default&password=clu5jt8FnsLv&ssl=true&sslmode=require";
+            String host = System.getenv("POSTGRES_HOST");
+            String user = System.getenv("POSTGRES_USER");
+            String password = System.getenv("POSTGRES_PASSWORD");
+            String db = System.getenv("POSTGRES_DATABASE");
+            String connectionString = String.format("jdbc:postgresql://%s:5432/%s?user=%s&password=%s&ssl=true&sslmode=require", host, db, user, password);
             connection = DriverManager.getConnection(connectionString);
 
         }catch(ClassNotFoundException e){
