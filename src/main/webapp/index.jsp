@@ -51,27 +51,11 @@
 
                     </a>
 
-                    <a href="#" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
-
-                        <i class="fa-solid fa-pen-to-square mb-2 fs-1"></i>
-
-                        <h2>Editar Produto</h2>
-
-                    </a>
-
                     <a href="delete-product.jsp" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
 
                         <i class="fa-solid fa-trash mb-2 fs-1"></i>
 
                         <h2>Excluir Produto</h2>
-
-                    </a>
-
-                    <a href="#" class="col px-4 py-3 border border-light rounded text-decoration-none text-center d-flex flex-column justify-content-center card card-transition">
-
-                        <i class="fa-solid fa-eraser mb-2 fs-1"></i>
-
-                        <h2>Apagar Todos Produtos</h2>
 
                     </a>
 

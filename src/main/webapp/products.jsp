@@ -26,7 +26,7 @@
 
             <%@ include file="snippets/sidebar.html"%>
 
-            <div class="table-responsive-xl app-container">
+            <div class="app-container">
 
                 <%@ include file="snippets/header.html"%>
 
@@ -39,6 +39,7 @@
                             <td class="p-1">Nome</td>
                             <td class="p-1">Descrição</td>
                             <td class="p-1">Valor</td>
+                            <td class="p-1">Editar</td>
                         </tr>
 
                     </thead>
@@ -52,6 +53,7 @@
                             <td class="p-4">${p.getName()}</td>
                             <td class="p-4">${p.getDescription()}</td>
                             <td class="p-4">R$${p.getValue()}</td>
+                            <td><a href="products?code=${p.getCode()}&action=get-product-for-update"><i class="fa-solid fa-pen-to-square mb-2"></i></a></td>
                         </tr>
 
                     </c:forEach>

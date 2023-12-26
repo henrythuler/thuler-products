@@ -35,7 +35,9 @@ public class ProductController extends HttpServlet {
             if (p == null) req.setAttribute("error", true);
             else req.setAttribute("product", p);
 
-            req.getRequestDispatcher("search-product.jsp").forward(req, res);
+            //Verifying if this is a common "search request" or a "get-product-for-update request"
+            if(req.getParameter("action").equals("get-product-for-update")) req.getRequestDispatcher("update-product.jsp").forward(req, res);
+            else req.getRequestDispatcher("search-product.jsp").forward(req, res);
 
         }else{
 
@@ -86,10 +88,38 @@ public class ProductController extends HttpServlet {
 
             case "update-product":
 
+                //Getting the product before update
+                int productCode = Integer.parseInt(code);
+                boolean productUpdated;
+
                 //Getting the input values
                 String newProductName = req.getParameter("name");
                 String newProductDescription = req.getParameter("description");
                 BigDecimal newProductValue = BigDecimal.valueOf(Double.parseDouble(req.getParameter("value")));
+
+                //Verifying if there's any empty inputs
+                if(newProductName.isEmpty() || newProductDescription.isEmpty() || newProductValue.equals(BigDecimal.ZERO)){
+                    productUpdated = false;
+                    message = "Todos os campos devem estar preenchidos!";
+
+                    req.setAttribute("operationStatus", productUpdated);
+                    req.setAttribute("operationMessage", message);
+
+                    req.getRequestDispatcher("update-product.jsp").forward(req, res);
+                }
+
+                Product productForUpdate = new Product(productCode, newProductName, newProductDescription, newProductValue);
+
+                productUpdated = dao.update(productForUpdate);
+
+                if(productUpdated) message = "Produto atualizado com sucesso!";
+                else message = "Ocorreu um erro ao atualizar o produto...";
+
+                req.setAttribute("operationStatus", productUpdated);
+                req.setAttribute("operationMessage", message);
+
+                req.getRequestDispatcher("update-product.jsp").forward(req, res);
+                break;
 
             case "delete-product":
 

@@ -1,6 +1,12 @@
 .products-table{
     background: #0F2167;
     color: #fff;
+    overflow-x: auto;
+}
+
+.products-table tr td a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .products-table tr:nth-child(even){

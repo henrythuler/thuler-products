@@ -39,7 +39,9 @@
 
                     </c:if>
 
-                    <div class="input-container w-25 d-flex flex-column column-gap-3 mb-3 fs-5">
+                    <h2 class="text-light mb-4">Buscar produto</h2>
+
+                    <div class="input-container d-flex flex-column column-gap-3 mb-3 fs-5">
 
                         <label class="mb-1" for="code">Código</label>
                         <input required class="form-control" type="text" name="code" id="code">

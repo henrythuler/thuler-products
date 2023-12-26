@@ -51,26 +51,31 @@
 
                     </c:if>
 
-                    <div class="input-container w-25 d-flex flex-column column-gap-3 mb-5 fs-5">
+                    <h2 class="text-light mb-4">Criar produto</h2>
+
+                    <div class="input-container d-flex flex-column column-gap-3 mb-5 fs-5">
 
                         <label class="mb-1" for="name">Nome</label>
                         <input required class="form-control" type="text" name="name" id="name">
 
                     </div>
 
-                    <div class="input-container w-25 d-flex flex-column column-gap-3 mb-5 fs-5">
+                    <div class="input-container d-flex flex-column column-gap-3 mb-5 fs-5">
 
                         <label class="mb-1" for="description">Descrição</label>
                         <input required class="form-control" type="text" name="description" id="description">
 
                     </div>
 
-                    <div class="input-container w-25 d-flex flex-column column-gap-3 mb-5 fs-5">
+                    <div class="input-container d-flex flex-column column-gap-3 mb-5 fs-5">
 
                         <label class="mb-1" for="value">Valor</label>
                         <input required class="form-control" type="number" step="0.01" name="value" id="value">
 
                     </div>
+
+                    <!--Request type input-->
+                    <input type="hidden" name="action" value="create-product">
 
                     <input class="px-5 py-1 form-button border-0 rounded-4 fs-5" value="Cadastrar" type="submit">
 

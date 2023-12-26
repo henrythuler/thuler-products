@@ -18,6 +18,10 @@ aside a{
     flex: 5;
 }
 
+.input-container{
+    width: 30%;
+}
+
 .input-container label{
     color: #fff;
 }
@@ -38,3 +42,15 @@ aside a:hover,
     background-color: #fff;
 }
 
+@media (max-width: 1250px){
+    .input-container{
+        width: 75%;
+    }
+
+    .form-button{
+        background-color: #3559E0;
+        color: #fff;
+        transition: 0.5s all ease;
+        width: 75%;
+    }
+}
