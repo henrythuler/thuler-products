@@ -23,9 +23,70 @@ header{
     display: none;
 }
 
+aside{
+    flex: 1;
+    background-color: #4CB9E7;
+    height: 100%;
+}
+
+aside a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
+}
+
+.main-container{
+    height: 100%;
+}
+
+.app-container{
+    flex: 5;
+}
+
+.input-container{
+    width: 30%;
+}
+
+.input-container label{
+    color: #fff;
+}
+
+.form-button{
+    background-color: #3559E0;
+    color: #fff;
+    transition: 0.5s all ease;
+}
+
+.product-container p{
+    color: #fff;
+}
+
+aside a:hover,
+.form-button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.close-menu{
+    display: none;
+}
+
+@media (max-width: 1250px){
+    .input-container{
+        width: 75%;
+    }
+
+    .form-button{
+        background-color: #3559E0;
+        color: #fff;
+        transition: 0.5s all ease;
+        width: 75%;
+    }
 }
 
 @media (max-width: 850px){
@@ -43,6 +104,10 @@ header{
     }
 
     .header-nav i{
+        display: block;
+    }
+
+    .close-menu{
         display: block;
     }
 

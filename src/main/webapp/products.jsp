@@ -16,7 +16,6 @@
 
         <link rel="stylesheet" href="assets/styles/style.css">
         <link rel="stylesheet" href="assets/styles/table.css">
-        <link rel="stylesheet" href="assets/styles/app.css">
 
     </head>
 
