@@ -37,7 +37,7 @@ Para isso, foi usado a linguagem `Java (JDBC, JSP, Servlets e JSTL)`.
 
 ## Banco de Dados
 
-Para esse projeto, foi utilizado um banco de dados PostgreSQL, portanto, é importante que você tenha uma conexão local ou remota disponível e que todas as seguintes variáveis de ambiente estejam corretamente configuradas na sua máquina ou que você faça as devidas alterações na classe `ConnectionManager` para realizar sua conexão. Obs: atente-se para a verificação SSL presente na URL de conexão, se não se aplicar ao seu caso, remova essa verificação.
+Para esse projeto, foi utilizado um banco de dados PostgreSQL, portanto, é importante que você tenha uma conexão local ou remota disponível e que todas as seguintes variáveis de ambiente estejam corretamente configuradas na sua máquina ou que você faça as devidas alterações na classe `ConnectionManager` para realizar sua conexão. Obs: atente-se para a verificação SSL presente na URL de conexão, se não se aplicar ao seu caso, remova.
 
 ### Variáveis de Ambiente
 
