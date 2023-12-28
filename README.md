@@ -58,6 +58,8 @@ ds_product   | varchar(256) | NO   |     | NOT NULL         |
 vl_product   | numeric(6,2) | NO   |     | NOT NULL         |
 ```
 
+<br>
+
 ## Abrir e executar o projeto
 
 Primeiro, certifique-se de que o `JDK 21` esteja instalado na sua máquina, assim como o `Apache Tomcat 10+` e o `Maven`. Também todas as variáveis de ambiente com as informações de acesso para seu banco de dados Postgre devem estar devidamente configuradas.
