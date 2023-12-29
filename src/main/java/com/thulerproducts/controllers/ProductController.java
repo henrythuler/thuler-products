@@ -12,7 +12,6 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.Objects;
 
 @WebServlet("/products")
 public class ProductController extends HttpServlet {
@@ -32,11 +31,18 @@ public class ProductController extends HttpServlet {
 
             Product p = dao.getByCode(Integer.parseInt(req.getParameter("code")));
 
+            //Verifying if there's a product that corresponds the passed code in the request parameter
             if (p == null) req.setAttribute("error", true);
             else req.setAttribute("product", p);
 
+            //Verifying if there's an action parameter in the request
+            String action = req.getParameter("action");
+            if(action == null){
+                action = "";
+            }
+
             //Verifying if this is a common "search request" or a "get-product-for-update request"
-            if(req.getParameter("action").equals("get-product-for-update")) req.getRequestDispatcher("update-product.jsp").forward(req, res);
+            if(action.equals("get-product-for-update")) req.getRequestDispatcher("update-product.jsp").forward(req, res);
             else req.getRequestDispatcher("search-product.jsp").forward(req, res);
 
         }else{
