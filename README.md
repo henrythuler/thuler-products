@@ -95,7 +95,7 @@ Desenvolver esse projeto sozinho e do completo zero foi de extrema valia para o 
 
 ## Links Úteis
 
-- [Script SQL Tabela de Produtos](https://thuler-products.s3.sa-east-1.amazonaws.com/SQL/products-table.sql)
+- [Script SQL Tabela de Produtos](https://drive.google.com/file/d/1ibFVdrHD0YT3PjyvkYbLradF0iRnixFl/view?usp=sharing)
 - [Apache Tomcat](https://tomcat.apache.org/download-10.cgi)
 - [JDK](https://www.oracle.com/br/java/technologies/downloads/)
 - [Maven](https://maven.apache.org/download.cgi)
